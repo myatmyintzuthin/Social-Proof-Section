@@ -1,0 +1,140 @@
+body{
+    font-family: 'spartan',sans-serif;
+    font-size: 15px;
+}
+.title h1{
+    color:  hsl(300, 43%, 22%);
+    width: 250px;
+    height: 100px;
+}
+.title p{
+    display: block;
+    color: hsl(303, 10%, 53%);
+    text-align: justify;
+    width: 390px;
+    height: 50px;
+}
+.tabs{
+    color: hsl(300, 43%, 22%);
+    background: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0px 30px 0px;
+}
+.star{
+    padding-top: 15px;    
+}
+.text{
+    padding-left: 30px;
+    justify-content: center;
+}
+.card{
+    border-radius: 10px;
+    background: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    width: 25%;
+    height: 10%;
+    padding: 25px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+#changeCol{
+    color: hsl(333, 80%, 67%);
+}
+#photo{
+    border-radius: 100px;
+    display: inline-block;
+}
+.tag{
+    margin: 0px 30px 0px;
+    display: inline-block;
+}
+.Comments{
+    height: fit-content;
+}
+@media (min-width:375px) and (max-width:900px){
+    body{
+        background-image: url(../images/bg-pattern-top-mobile.svg),url(../images/bg-pattern-bottom-mobile.svg);   
+        background-repeat: no-repeat,no-repeat;
+        background-position: left top, right;
+        background-size: contain,contain;
+        }
+    .header{
+        display: block;
+    }
+    .title p{
+        text-align: center;
+    }
+    .title h1{
+        text-align: center;
+    }
+    .star{
+        margin-left: 50px;
+    }
+    .Rating{
+        display: block;
+    }
+    .tabs{
+        display: inline-flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .card{
+        display: block;
+        width: 80%;
+        align-content: center;
+    }
+
+}
+@media screen and (min-width:900px){
+    body{
+    background-image: url(../images/bg-pattern-top-desktop.svg),url(../images/bg-pattern-bottom-desktop.svg);   
+    background-repeat: no-repeat,no-repeat;
+    background-position: left top, right;
+    background-size:contain,contain;
+
+    }
+    header{
+        width: 45%;
+        display: inline-block; 
+    }
+    .title{
+        padding: 50px 0px 50px 30px;
+    }
+    .Rating{
+        width: 45%;
+        display: inline-block;
+        
+    }
+    .tabs{
+        margin: 5px; 
+        width: 70%;  
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .card{
+        display: inline-block;
+    }
+    #review{
+        margin-left: 10px;
+    }
+    #report{
+        margin-left: 50px;
+    }
+    #besttech{
+        margin-left: 100px;
+    }
+    #person1{
+        position: relative;
+    }
+    #person2{
+        position: relative;
+        top: 15px;
+    }
+    #person3{
+        position: relative;
+        top: 30px;
+    }
+    
+}
